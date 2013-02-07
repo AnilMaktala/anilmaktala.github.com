@@ -27,32 +27,53 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
+        <h3>Two Sided Multi Draggable Component</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<h3>Contents</h3>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<ul>
+<li>1   About:    1</li>
+<li>2   Description:  1</li>
+<li>3   Frameworks used:  1</li>
+<li>4   Features present: 1</li>
+<li>5   How to integrate: 2</li>
+<li>6   Attachments:  2</li>
+<li>7   Screenshots:  3</li>
+</ul><h3>About:</h3>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>This document gives the information required to integrate the “Two Sided Multi Draggable Component” into the html with the help of attached .js and .css files.</p>
 
-<h3>Designer Templates</h3>
+<h3>Description:</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>Two Sided Multi Draggable Component, as the name suggests, this component is used for dragging list of apps from one list to another in both directions.</p>
 
-<h3>Rather Drive Stick?</h3>
+<h3>Frameworks used:</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<ul>
+<li>1.    jQuery JavaScript Library v1.8.3</li>
+<li>2.    jQuery UI - v1.9.2
+###  Features present:
+Following are the features provided by this component:</li>
+<li>1.    Drag single/Multiple apps from one list to another list.</li>
+<li>2.    Selection of multiple list apps using ‘Ctrl+mouse click’ and ‘shift+mouse click’.</li>
+<li>3.    Right and Left Arrow buttons to move single/multiple apps between the lists.</li>
+<li>4.    Up and Down arrows for second list for moving the position of an app within the list.</li>
+<li>5.    Restrict to maximum number of apps present in second list.</li>
+</ul><h3>How to integrate:</h3>
 
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<ul>
+<li>1.    Include the .js and .css provided by this component.</li>
+<li>2.    Create a container HTML Div element in the html file where this component is to be used. For example:</li>
+<li>        <div></div>
+</li>
+<li>3.    Call the initialization method “multiDraggableComponent()” on this div with appropriate parameters. For example:</li>
+<li>         document.getElementById('# draggableContainer).multiDraggableComponent({ availableApps: [], selectedApps: [], moveOptions: true/false, maxSelected: Number });
+There are four parameters used while calling the method:</li>
+<li>a.    availableApps: This represents array of apps that should be present on the left side list of the component. This doesn’t have any maximum number of apps limit.</li>
+<li>b.    selectedApps: This represents array of apps that should be present on the right side list of the component. This has maximum number of apps limitation.</li>
+<li>c.    moveOptions: This boolean value represents the presence of Up and Down arrows that are used to move the app top or bottom in the same list.</li>
+<li>d.    maxSelected: This integer value represents the maximum number of apps that should be present in the second list of apps.</li>
+</ul>
       </section>
     </div>
 
